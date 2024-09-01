@@ -1,8 +1,10 @@
 # Market Pattern Search
 
-Search historical market data for similar time ranges using DTW graph similarity search and other features.
+Search historical market data for similar time ranges using [Dynamic Time Warping](https://en.wikipedia.org/wiki/) distance and other features.
 
 ## Project Organization
+This project was initially generated using the [Cookiecutter Data Science](https://cookiecutter-data-science.drivendata.org) 
+template, then trimmed down.
 
 ```
 ├── LICENSE            <- Open-source license if one is chosen
@@ -16,10 +18,9 @@ Search historical market data for similar time ranges using DTW graph similarity
 │                         market_pattern_search and configuration for tools like black
 ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
 │                         generated with `pip freeze > requirements.txt`
-├── setup.cfg          <- Configuration file for flake8
 └── market_pattern_search   <- Source code for use in this project.
     ├── __init__.py         <- Makes market_pattern_search a Python module
-    └── config.py           <- Code to create visualizations
+    └── config.py           <- Config
 ```
 
 --------

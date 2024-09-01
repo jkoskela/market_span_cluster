@@ -1,9 +1,5 @@
 # Market Pattern Search
 
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
-</a>
-
 Search historical market data for similar time ranges using DTW graph similarity search and other features.
 
 ## Project Organization
@@ -20,25 +16,10 @@ Search historical market data for similar time ranges using DTW graph similarity
 │                         market_pattern_search and configuration for tools like black
 ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
 │                         generated with `pip freeze > requirements.txt`
-│
 ├── setup.cfg          <- Configuration file for flake8
-│
 └── market_pattern_search   <- Source code for use in this project.
-    │
-    ├── __init__.py             <- Makes market_pattern_search a Python module
-    │
-    ├── config.py               <- Store useful variables and configuration
-    │
-    ├── dataset.py              <- Scripts to download or generate data
-    │
-    ├── features.py             <- Code to create features for modeling
-    │
-    ├── modeling                
-    │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
-    │   └── train.py            <- Code to train models
-    │
-    └── plots.py                <- Code to create visualizations
+    ├── __init__.py         <- Makes market_pattern_search a Python module
+    └── config.py           <- Code to create visualizations
 ```
 
 --------

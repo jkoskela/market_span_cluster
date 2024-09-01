@@ -7,7 +7,7 @@ name = "market_pattern_search"
 version = "0.0.1"
 description = "Search historical market data for similar time ranges using DTW graph similarity search and other features."
 authors = [
-  { name = "Your name (or your organization/company/team)" },
+  { name = "Jade Koskela", email = "jkoskeladev@gmail.com" },
 ]
 license = { file = "LICENSE" }
 readme = "README.md"

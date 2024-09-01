@@ -1,10 +1,13 @@
 black
-flake8
-isort
-loguru
-mkdocs
-pip
-python-dotenv
-tqdm
-typer
+ipython
+ipywidgets~=8.1.5
+lightweight-charts
+loguru~=0.7.2
+numpy
+pandas
+python-dotenv~=1.0.1
+pytz
+rich
+tslearn
+traitlets~=5.14.3
 -e .

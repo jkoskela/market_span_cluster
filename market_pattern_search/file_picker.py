@@ -1,3 +1,5 @@
+from typing import Callable
+
 import anywidget
 import pandas as pd
 import traitlets
@@ -5,8 +7,7 @@ from pathlib import Path
 
 from traitlets import observe
 
-# define a type hint for a function that accepts a string filename and returns a DataFrame
-ParseFunction = callable[[str], pd.DataFrame]
+ParseFunction = Callable[[str], pd.DataFrame]
 
 
 class FilePickerWidget(anywidget.AnyWidget):

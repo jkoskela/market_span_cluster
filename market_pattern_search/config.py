@@ -3,6 +3,10 @@ from pathlib import Path
 from dotenv import load_dotenv
 from loguru import logger
 
+import pytz
+
+EST = pytz.timezone('US/Eastern')
+
 # Load environment variables from .env file if it exists
 load_dotenv()
 

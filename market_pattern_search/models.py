@@ -1,5 +1,6 @@
 from collections import namedtuple
 
+
 # A match with start and end timestamps and a score.
 # The score is a float value representing the distance, so smaller is better.
 MatchModel = namedtuple('MatchModel', ['start', 'end', 'score'])

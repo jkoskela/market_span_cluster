@@ -1,4 +1,4 @@
-# Market Pattern Search
+# Market Span Cluster
 
 Search historical market data for similar time ranges using [Dynamic Time Warping](https://en.wikipedia.org/wiki/) distance.
 
@@ -9,6 +9,8 @@ close (hlc4).
 
 The top matches can be viewed using the widget, plotted with Tradingview lightweight charts. Also, projection bands
 can be plotted, using the average of the top matches.
+
+These main entrypoint is the Jupyter notebook `notebooks\search.ipynb`.
 
 ## Project Organization
 This project was initially generated using the [Cookiecutter Data Science](https://cookiecutter-data-science.drivendata.org) 
@@ -22,11 +24,12 @@ template, then trimmed down.
 │   ├── processed      <- The final, canonical data sets for modeling.
 │   └── raw            <- The original, immutable data dump.
 ├── notebooks          <- Jupyter notebooks.
+│   └── search.py      <- search.py the main app.
 ├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         market_pattern_search and configuration for tools like black
+│                         market_span_cluster and configuration for tools like black
 ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
 │                         generated with `pip-compile requirements.in`
-└── market_pattern_search   <- Source code for use in this project.
+└── market_span_cluster   <- Source code for use in this project.
 ```
 
 --------

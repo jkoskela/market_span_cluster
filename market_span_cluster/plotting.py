@@ -3,7 +3,7 @@ import traceback
 from lightweight_charts import JupyterChart
 from collections import namedtuple
 
-from market_pattern_search.models import MatchModel, WindowMatch
+from market_span_cluster.models import MatchModel, WindowMatch
 
 
 def get_window_match(data: pd.DataFrame, match: MatchModel):

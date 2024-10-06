@@ -12,24 +12,26 @@ can be plotted, using the average of the top matches.
 
 These main entrypoint is the Jupyter notebook `notebooks\search.ipynb`.
 
+![Projection](docs/projection.png)
+
 ## Project Organization
 This project was initially generated using the [Cookiecutter Data Science](https://cookiecutter-data-science.drivendata.org) 
 template, then trimmed down.
 
 ```
-├── LICENSE            <- Open-source license if one is chosen
-├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
-├── README.md          <- The top-level README for developers using this project.
+├── LICENSE
+├── Makefile              <- Makefile for convenience commands like `make data` or `make train`
+├── README.md
+├── docs 
 ├── data
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
-├── notebooks          <- Jupyter notebooks.
-│   └── search.py      <- search.py the main app.
-├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         market_span_cluster and configuration for tools like black
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip-compile requirements.in`
-└── market_span_cluster   <- Source code for use in this project.
+│   ├── processed         <- The final, canonical data sets for modeling.
+│   └── raw               <- The original, immutable data dump.
+├── market_span_cluster   <- Source code for use in this project
+├── notebooks
+│   └── search.py         <- search.py the main app.
+├── pyproject.toml
+└── requirements.in
+└── requirements.txt
 ```
 
 --------

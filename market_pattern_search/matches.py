@@ -29,29 +29,29 @@ def normalize_window(feature: pd.Series, base: float):
 
 def dtw_hlc4(target: pd.DataFrame, window: pd.DataFrame):
     """Run DTW using hlc4"""
-    norm_target = normalize_window(hlc4(target), target.close[-1])
-    norm_window = normalize_window(hlc4(window), window.close[-1])
+    norm_target = normalize_window(hlc4(target), target.close.iloc[-1])
+    norm_window = normalize_window(hlc4(window), window.close.iloc[-1])
     return dtw(norm_target, norm_window)
 
 
 def dtw_close(target: pd.DataFrame, window: pd.DataFrame):
     """Run DTW using close price"""
-    norm_target = normalize_window(target.close, target.close[-1])
-    norm_window = normalize_window(window.close, window.close[-1])
+    norm_target = normalize_window(target.close, target.close.iloc[-1])
+    norm_window = normalize_window(window.close, window.close.iloc[-1])
     return dtw(norm_target, norm_window)
 
 
 def dtw_high(target: pd.DataFrame, window: pd.DataFrame):
     """Run DTW using high price"""
-    norm_target = normalize_window(target.high, target.close[-1])
-    norm_window = normalize_window(window.high, window.close[-1])
+    norm_target = normalize_window(target.high, target.close.iloc[-1])
+    norm_window = normalize_window(window.high, window.close.iloc[-1])
     return dtw(norm_target, norm_window)
 
 
 def dtw_low(target: pd.DataFrame, window: pd.DataFrame):
     """Run DTW using low price"""
-    norm_target = normalize_window(target.low, target.close[-1])
-    norm_window = normalize_window(window.low, window.close[-1])
+    norm_target = normalize_window(target.low, target.close.iloc[-1])
+    norm_window = normalize_window(window.low, window.close.iloc[-1])
     return dtw(norm_target, norm_window)
 
 

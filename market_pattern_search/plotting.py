@@ -3,9 +3,7 @@ import traceback
 from lightweight_charts import JupyterChart
 from collections import namedtuple
 
-from market_pattern_search.models import MatchModel
-
-WindowMatch = namedtuple('WindowMatch', ['window', 'match_end', 'projection_start', 'score'])
+from market_pattern_search.models import MatchModel, WindowMatch
 
 
 def get_window_match(data: pd.DataFrame, match: MatchModel):

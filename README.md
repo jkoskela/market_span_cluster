@@ -2,13 +2,18 @@
 
 Search historical market data for similar time ranges using [Dynamic Time Warping](https://en.wikipedia.org/wiki/) distance.
 
-The user provides an end timestamp, a start time of day, and a lookback range in days. We will search the historical data
-for similar time ranges, and return the top N matches. The matches are scored using one of several methods, all using
-DTW. The default method will run DTW on the highs, lows, and close, and return the average, with double weight on the
-close (hlc4). 
+Given an end of range timestamp, a start time of day, and a lookback range in days, we will search
+for similar time ranges, and return the top N matches. The practical use of this would be to run this at the start of day,
+using now() for the end of time range.
 
-The top matches can be viewed using the widget, plotted with Tradingview lightweight charts. Also, projection bands
-can be plotted, using the average of the top matches.
+Market data is provided by the user. It should be in the form of OHLCV with a UTC timestamp. The data used here came from
+[databento.com](https://databento.com).
+
+The matches are scored using one of several variations of DTW. The default method will run DTW on the highs, lows,
+and close, and return the average distance, with double weight on the close (hlc4). Lower distance is better.
+
+The matches can be plotted with Tradingview lightweight charts by using the widget. Projection bands from the target window
+can be also be plotted.
 
 These main entrypoint is the Jupyter notebook `notebooks\search.ipynb`.
 

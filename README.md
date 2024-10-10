@@ -41,3 +41,7 @@ template, then trimmed down.
 
 --------
 
+## Contributors
+- Jade Koskela
+- Claude.ai 3.5 Sonnet
+- ChatGPT 4.o
